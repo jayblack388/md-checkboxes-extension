@@ -2,7 +2,7 @@
   "name": "md-checkboxes",
   "displayName": "Markdown Checkboxes",
   "description": "Interactive checkboxes in Markdown preview - click to toggle [ ] and [x]",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "jayblack388",
   "license": "MIT",
   "engines": {
