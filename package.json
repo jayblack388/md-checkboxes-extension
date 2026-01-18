@@ -3,6 +3,7 @@
   "displayName": "Markdown Checkboxes",
   "description": "Interactive checkboxes in Markdown preview - click to toggle [ ] and [x]",
   "version": "1.0.0",
+  "icon": "images/icon.png",
   "publisher": "jayblack388",
   "license": "MIT",
   "engines": {
