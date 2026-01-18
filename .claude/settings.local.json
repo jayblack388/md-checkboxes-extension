@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn install)",
+      "Bash(yarn compile:*)",
+      "Bash(yarn package:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(ls:*)",
+      "Bash(cursor --install-extension:*)",
+      "Bash(cat:*)",
+      "Bash(python3:*)",
+      "Bash(node -e:*)"
+    ]
+  }
+}

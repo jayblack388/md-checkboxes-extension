@@ -1,0 +1,65 @@
+{
+  "name": "md-checkboxes",
+  "displayName": "Markdown Checkboxes",
+  "description": "Interactive checkboxes in Markdown preview - click to toggle [ ] and [x]",
+  "version": "0.1.0",
+  "publisher": "jayblack388",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0",
+    "node": ">=18.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "markdown",
+    "checkbox",
+    "todo",
+    "task",
+    "preview"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayblack388/md-checkboxes-extension"
+  },
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "contributes": {
+    "markdown.previewStyles": [
+      "./media/checkbox.css"
+    ],
+    "markdown.previewScripts": [
+      "./media/checkbox.js"
+    ],
+    "markdown.markdownItPlugins": true
+  },
+  "scripts": {
+    "compile": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "watch": "yarn compile --watch",
+    "package": "yarn compile && vsce package --no-yarn",
+    "commit": "cz"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "markdown-it-task-checkbox": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.74.0",
+    "@vscode/vsce": "^2.22.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "esbuild": "^0.19.0",
+    "ovsx": "^0.8.0",
+    "typescript": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

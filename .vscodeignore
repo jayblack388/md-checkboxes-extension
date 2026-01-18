@@ -1,0 +1,14 @@
+.vscode/**
+.claude/**
+.github/**
+node_modules/**
+src/**
+out/**
+.git/**
+.gitignore
+tsconfig.json
+yarn.lock
+package-lock.json
+**/*.map
+**/*.ts
+.secrets
